@@ -10,29 +10,43 @@
     <link href="chess.css" rel="stylesheet"> <!-- CSS custom -->
     <script src="func.js"></script> <!-- Funciones escritas en javascript -->
   </head>
-  <body style="margin-top:5%" >
+  <body style="margin-top:5%; background:lightgrey" >
+    <div class="container" align="center">
+      <font size="15">Chess Timer</font>
+      <small>By Isaac Kuri</small>
+    </div>
     <div class="container">
-      <div class="row" style="background-color:black">
-          <div class="col-md-4" align="center">
+
+      <div class="row">
+        <div class="col-md-4" style="padding:0;margin-bottom:2%">
+          <div style="background-color:black" align="center">
             <font size="15" color="white">Player 1</font>
           </div>
-          <div class="col-md-4" style="background-color:white" align="center" onclick="reset('timer1','timer2');">
-            <font size="15" color="black">Chess Timer</font></div>
-          <div class="col-md-4" align="center">
-            <font size="15" color="white">Player 2</font>
-          </div>
-      </div>
-      <div class="row" style="background-color:white;">
-          <div id="player1" class="col-md-4" align="center" onclick="stop('timer1');test('timer2');">
+          <div id="player1" style="background-color:white" align="center" onclick="stop('timer1');test('timer2');">
             <font id="timer1" size="15" color="black" >5:00</font>
           </div>
-          <div id="playblock" class="col-md-4" style="background-color:black" align="center" onclick="playb('playt');">
+        </div>
+
+        <div class="col-md-4" style="padding:0; margin-bottom:2%;">
+          <div style="background-color:white" align="center" onclick="reset('timer1','timer2');">
+            <font size="15" color="black">Reset</font>
+          </div>
+          <div id="playblock" style="background-color:black" align="center" onclick="playb('playt');">
             <font id="playt" size="15" color="white">Pause</font>
           </div>
-          <div id="player2" class="col-md-4" align="middle" onclick="stop('timer2');test('timer1');">
+        </div>
+
+        <div class="col-md-4"style="padding:0">
+          <div align="center" style="background-color:black">
+            <font size="15" color="white">Player 2</font>
+          </div>
+          <div id="player2" style="background-color:white" align="middle" onclick="stop('timer2');test('timer1');">
             <font id="timer2" size="15" color="black">5:00</font>
           </div>
+        </div>
+
       </div>
+
     </div>
   </body>
 </html>
