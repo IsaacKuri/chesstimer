@@ -58,7 +58,7 @@ function test(who){
   var tempo = idas.getAttribute('tempo');
   idbs.setAttribute('which',who);
   if (!tempo) {
-    tempo = 70;
+    tempo = 300;
     idas.setAttribute('tempo',tempo);
   }
 
@@ -118,7 +118,7 @@ function resetplayb(){
   text.innerHTML ="Pause";
   text.removeAttribute('playb');
   text.removeAttribute('which');
-  block.setAttribute('style', "background-color:red");
+  block.setAttribute('style', "background-color:black");
 }
 
 function noclick(){
